@@ -1,0 +1,286 @@
+.register-text {
+    text-decoration: underline;
+}
+
+.login-text {
+    margin-top: 50px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.social-login-list {
+    margin-top: 16px;
+
+    width: 400px;
+    height: 60px;
+
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 40px;
+    cursor: pointer;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.login-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-logo {
+    margin-right: 10px;
+}
+
+.social-login-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 23px;
+    font-weight: 500;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    width: 580px;
+    height: 27px;
+    order: 2;
+}
+
+.divider1 {
+    width: 164.5px;
+    height: 2px;
+    background: rgba(102, 102, 102, 0.25);
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.divider2 { 
+    width: 164.5px;
+    height: 2px;
+    background: rgba(102, 102, 102, 0.25);
+    flex: none;
+    order: 2;
+    flex-grow: 1;
+}
+
+.divider-register {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 23px;
+    font-weight: 500;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    width: 580px;
+    height: 27px;
+    order: 2;
+}
+
+.divider1-register {
+    width: 151px;
+    height: 2px;
+    background: rgba(102, 102, 102, 0.25);
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.divider2-register {
+    width: 151px;
+    height: 2px;
+    background: rgba(102, 102, 102, 0.25);
+    flex: none;
+    order: 2;
+    flex-grow: 1;
+}
+
+.login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-input, #password-input {
+    box-sizing: border-box;
+
+    width: 400px;
+    height: 50px;
+    margin-top: 6px;
+    padding-left: 10px;
+
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    border-radius: 12px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#user-input {
+    margin-bottom: 24px;
+}
+
+.password-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.show-password-box {
+    display: flex;
+    cursor: pointer;
+    color: rgba(102, 102, 102, 0.8);
+}
+
+label {
+    color: rgba(102, 102, 102, 0.8);
+}
+
+.forgetPassword-text {
+    line-height: 24px;
+    text-decoration-line: underline;
+
+    color: #111111;
+}
+
+#password-input {
+    margin-bottom: 5px;
+}
+
+.forgetPassword-box {
+    display: flex;
+    justify-content: end;
+}
+
+.password-text {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    margin-left: 3px;
+    color: #666666;
+}
+
+.gender-box {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    width: 375px;
+    height: 60px;
+}
+
+h4 {
+    margin-top: 50px;
+}
+
+.gender-label {
+    color: #111111
+}
+
+.optional {
+    color: rgba(102, 102, 102, 0.8);
+    font-size: 14px;
+}
+
+.login-register-btn {
+
+    width: 400px;
+    height: 60px;
+    margin-top: 30px;
+    background: #111111;
+    opacity: 0.25;
+    border-radius: 40px;
+    color: #FFFFFF;
+
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    .login-page {
+        max-width: 100%; /* Maksymalna szerokość strony na mniejszych ekranach */
+    }
+
+    .social-login-nav {
+        flex-direction: column; /* Zamiana układu na kolumnowy dla przycisków logowania społecznościowego */
+        gap: 20px; /* Dodanie odstępu między przyciskami */
+    }
+
+    .divider-register {
+        gap: 80px;
+    }
+
+    #user-input, #password-input {
+        width: 90%; /* Mniejsza szerokość pól wejściowych na mniejszych ekranach */
+    }
+
+    .login-register-btn {
+        width: 90%; /* Mniejsza szerokość przycisku logowania na mniejszych ekranach */
+    }
+
+    .gender-box {
+        width: 90%; /* Mniejsza szerokość pola wyboru płci na mniejszych ekranach */
+    }
+
+    h4 {
+        margin-top: 30px; /* Mniejszy margines górnego tytułu na mniejszych ekranach */
+    }
+    
+    .password-text {
+        font-size: 12.5px;
+    }
+
+    .divider-register, .divider{
+        gap: 23px;
+    }
+    
+    .divider1-register, .divider1 {
+        width: auto;
+    }
+
+    .social-login-list {
+        width: 350px;
+    }
+
+    .login-box form #user-input, .login-box form #password-input {
+        width: 380px;
+    }
+
+    .g-recaptcha {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.error {
+    display: flex;
+    justify-content: center;
+    color: rgb(150, 2, 2);
+}
+
+.loginBtn, .registerBtn {
+    display: flex;
+    justify-content: center;
+}

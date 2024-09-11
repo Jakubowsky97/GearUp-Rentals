@@ -1,0 +1,253 @@
+body {
+    font-family: Open Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    color: #525f7f;
+    background-color: #f8f9fe;
+  }
+
+.container {
+    max-width: 1250px;
+    height: 340px;
+    margin: 30px auto 30px;
+    padding: 0 !important;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-title {
+    width: fit-content;
+    margin-left: 320px;
+    color: #393939;
+  }
+
+  .info {
+    padding-left: 25px;
+    height: fit-content; 
+  }
+  
+  .info-input {
+    margin-top: 10px;
+  }
+
+  input {
+    box-sizing: border-box;
+
+    width: 400px;
+    height: 50px;
+    margin-top: 6px;
+    padding-left: 10px;
+
+    border: 1px solid rgba(102, 102, 102, 0.35);
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+ .nazwaBox {
+    position: relative;
+    padding-left: 30px;
+ }
+
+ .kategoria {
+    position: relative;
+    padding-left: 30px;
+}
+
+ .kategoria select {
+    display: none;
+  }
+
+  /* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected { 
+    box-sizing: border-box;
+
+    width: 400px;
+    height: 50px;
+    padding-left: 10px;
+
+    border: 1px solid rgba(102, 102, 102, 0.35);
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 400px;
+    margin-left: 30px;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+#uploadInput {
+    display: none;
+}
+
+.uploadImg {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  position: absolute;
+  top: 100px;
+  left: 900px;
+}
+
+.imageUploader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column
+}
+
+h2, h4{
+  width: fit-content;
+}
+
+form {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-right: 300px;
+}
+
+textarea {
+  width: 900px;
+  height: 200px;
+  margin-top: 6px;
+
+  border: 1px solid rgba(102, 102, 102, 0.35);
+  resize: none;
+}
+
+.Label, #Input, p, #imie, #email, #numer {
+  margin-left: 30px;
+}
+
+.Label {
+  margin-top: 20px;
+}
+
+.container_location {
+  height: 140px;
+}
+
+.container_dane {
+  height: 360px;
+}
+
+.container_buttons {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons {
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+@media (max-width: 992px) {
+  .container {
+      max-width: 90%; /* Maksymalna szerokość kontenera na mniejszych ekranach */
+  }
+
+  .uploadImg {
+      width: 80px; /* Zmniejszenie szerokości przycisku dodawania zdjęć na mniejszych ekranach */
+  }
+
+  .main-title {
+    width: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .imageBox {
+    display: flex;
+    height: 630px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  .uploadImg {
+    position: unset;
+  }
+
+  .imageUploader { 
+    width: 80%;
+    margin-top: 30px;
+  }
+  
+  .imageUploader label { 
+    margin-left: 30px;
+  }
+
+  .imageUploader img {
+    width: 40%;
+  }
+
+  input {
+    width: 300px;
+  }
+
+  textarea {
+    width: 300px;
+    height: 400px;
+  }
+
+  .info-input {
+    width: 400px;
+  }
+
+  .select-items div,.select-selected {
+    width: 300px;
+  }
+
+  .nazwaBox label {
+    display: inline-block;
+    width: 300px;
+  }
+}

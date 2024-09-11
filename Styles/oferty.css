@@ -1,0 +1,137 @@
+.filterBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.buy-btn {
+  width: 190px;
+}
+
+.button {
+  margin-right: 100px;
+}
+
+input {
+    box-sizing: border-box;
+
+    width: 400px;
+    height: 50px;
+    margin-top: 6px;
+    padding-left: 10px;
+
+    border: 1px solid rgba(102, 102, 102, 0.35);
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.kategoria {
+    position: relative;
+}
+
+ .kategoria select {
+    display: none;
+  }
+
+  /* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected { 
+    box-sizing: border-box;
+
+    width: 400px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 12px;
+
+    border: 1px solid rgba(102, 102, 102, 0.35);
+  }
+
+  .select-selected {
+    margin-top: 10px;
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    width: 400px;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 767px) {
+    .filterBox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .button {
+      margin-top: 10px;
+    }
+
+    .buy-btn {
+      width: 390px;
+    }
+
+    .select-items div,.select-selected { 
+        width: 390px;
+        padding-left: 10px;
+      }
+  }
+
+  .oferty {
+    margin-top: 50px;
+  }
+
+  .info-h2 {
+    text-align: center;
+  }
+
+  .latestOffer {
+    gap: 100px;
+  }
+
+  .lblKat {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }

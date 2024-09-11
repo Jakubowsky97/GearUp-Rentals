@@ -1,0 +1,105 @@
+body {
+    box-sizing: unset;
+}
+
+.content {
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100%;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: center;
+    background: #eaeaea;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.small-img-group img {
+    max-height: 250px;
+}
+
+img.img-fluid {
+    max-width: 526px;
+    max-height: 600px;
+}
+
+.main-img {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.data {
+    display: flex;
+    gap: 15px;
+}
+
+.container input[type="date"] {
+    width: 150px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.container input[type="submit"], .container input[type="button"] {
+    width: 130px;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.del-btn {
+    border: rgb(138, 29, 29);
+    background-color: rgb(158, 6, 6);
+    margin-top: 15px;
+}
+
+.del-btn:hover {
+    border: 3px solid rgb(138, 29, 29);
+}
+
+.container input[type="date"]:focus {
+    outline: none;
+}
+
+input {
+    border: 1px solid rgba(102, 102, 102, 0.35);
+}
+
+.dataDod {
+    color: rgb(131, 131, 131);
+}
+
+@media (max-width: 768px) { 
+    img.img-fluid {
+        max-width: 100%;
+    }
+
+    .info {
+        box-sizing: border-box;
+        margin-top: 30px;
+    }
+
+    .main-img {
+        margin-bottom: 20px;
+    }
+
+    .icon svg {
+        width: 150%;
+    }
+}

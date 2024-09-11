@@ -1,0 +1,11 @@
+.container_informacje {
+    height: 225px;
+}
+
+.container_dane {
+    height: 275px;
+}
+
+.app-root {
+    overflow-y: hidden;
+}
